@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:id="@+id/month_salaryview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="7" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_week"
+                android:gravity="center"
+                android:text="@string/weekday_7"
+                android:textColor="@android:color/white" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_week"
+                android:gravity="center"
+                android:text="@string/weekday_1"
+                android:textColor="@android:color/white" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_week"
+                android:gravity="center"
+                android:text="@string/weekday_2"
+                android:textColor="@android:color/white" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_week"
+                android:gravity="center"
+                android:text="@string/weekday_3"
+                android:textColor="@android:color/white" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_week"
+                android:gravity="center"
+                android:text="@string/weekday_4"
+                android:textColor="@android:color/white" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_week"
+                android:gravity="center"
+                android:text="@string/weekday_5"
+                android:textColor="@android:color/white" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_week"
+                android:gravity="center"
+                android:text="@string/weekday_6"
+                android:textColor="@android:color/white" >
+            </TextView>
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="10dp"
+            android:numColumns="7"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_salary_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/month_salaryview"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_totalbar" >
+
+            <TextView
+                android:id="@+id/tv_salary_basic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_salary_basic"
+                android:layout_centerHorizontal="true"
+                android:text="基本工资"
+                android:textColor="@color/scoregray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_totalbar" >
+
+            <TextView
+                android:id="@+id/tv_salary_insured"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_salary_insured"
+                android:layout_centerHorizontal="true"
+                android:text="保险扣款"
+                android:textColor="@color/scoregray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_totalbar"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_salary_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="28sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_salary_total"
+                android:layout_centerHorizontal="true"
+                android:text="实发总额"
+                android:textColor="@color/scoregray"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_salary_total"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/view_salary_commission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_day_normal"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/iv_salary_commission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_commision_wage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_salary_commission"
+                    android:text="@string/salary_commission"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="RMB"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_commission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tv_rmb"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_salary_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_day_normal"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/iv_salary_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_award_wage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_salary_add"
+                    android:text="@string/salary_add"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="RMB"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_salary_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tv_rmb"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_salary_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_day_normal"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/iv_salary_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_attence_wage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_salary_sub"
+                    android:text="@string/salary_sub"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="RMB"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_salary_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tv_rmb"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/view_salary_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_day_normal"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <ImageView
+                    android:id="@+id/iv_salary_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/icon_other_wage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_salary_other"
+                    android:text="@string/salary_other"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_rmb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:text="RMB"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tv_salary_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/tv_rmb"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

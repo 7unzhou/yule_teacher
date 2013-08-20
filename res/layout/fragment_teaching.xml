@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title"
+        android:background="@android:color/white" >
+
+        <TextView
+            android:id="@+id/tv_lesson_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:id="@+id/sv_teaching"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tv_lesson_title"
+            android:scrollbars="none" >
+
+            <TextView
+                android:id="@+id/tv_teaching_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textSize="16sp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/tv_teaching_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:textSize="16sp"
+            android:visibility="gone" >
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_teaching_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_marginRight="6dp"
+        android:background="#273038"
+        android:padding="8dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:visibility="gone" >
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/ll_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:id="@+id/bt_teahcing_chinese"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tabbar_select"
+            android:textSize="18sp" >
+
+            <ImageView
+                android:id="@+id/iv_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_study_chinese" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_chinese"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="@string/teahcing_chinese"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_teahcing_bilingual"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tabbar_normal"
+            android:textSize="18sp" >
+
+            <ImageView
+                android:id="@+id/iv_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_study_language" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_language"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="@string/teahcing_bilingual"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_teaching_water"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tabbar_normal"
+            android:textSize="18sp" >
+
+            <ImageView
+                android:id="@+id/iv_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_study_water" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_water"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="@string/teahcing_water"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <!--
+             <Button
+            android:id="@+id/bt_teahcing_bilingual"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/teahcing_bilingual"
+            android:textSize="18sp" />
+        -->
+
+
+        <!--
+             <Button
+            android:id="@+id/bt_teaching_water"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/teahcing_water"
+            android:textSize="18sp" />
+        -->
+    </LinearLayout>
+
+</RelativeLayout>

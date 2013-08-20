@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <include
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar" />
+
+    <TextView
+        android:id="@+id/tv_apprai_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textSize="18sp"
+        android:padding="5dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ll_title"
+        android:layout_margin="5dp"
+        android:layout_weight="4" >
+
+        <EditText
+            android:id="@+id/et_apprai_content"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="top"
+            android:hint="@string/apprai_contenthint" />
+
+        <TextView
+            android:id="@+id/tv_addtotemplate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/Azure"
+            android:text="@string/add_to_template"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_appraicontent_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_apprai_height"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1.5"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_heightext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/appraisal_height"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_apprai_height"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/tv_heightext"
+            android:gravity="right|center_vertical"
+            android:maxLength="5"
+            android:numeric="decimal"
+            android:paddingRight="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/appraisal_cm" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_apprai_weight"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1.5" >
+
+        <TextView
+            android:id="@+id/tv_weihttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/appraisal_weight"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_apprai_weight"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/tv_weihttext"
+            android:gravity="right|center_vertical"
+            android:maxLength="5"
+            android:numeric="decimal"
+            android:paddingRight="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/appraisal_kg" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_apprai_send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/bt_blue_small_normal"
+        android:text="@string/title_bt_sendappra"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

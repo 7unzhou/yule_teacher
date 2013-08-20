@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+
+    <!--
+    <LinearLayout
+        android:id="@+id/rl_contenttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="10" >
+
+        <Button
+            android:id="@+id/bt_custominfo"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/custom_info"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_lessoninfo"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:background="@drawable/bt_blue_small_normal"
+            android:text="@string/custom_lessoninfo"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:id="@+id/ll_title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:id="@+id/bt_custominfo"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tabbar_select"
+            android:textSize="18sp" >
+
+            <ImageView
+                android:id="@+id/iv_chinese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_order_order" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_chinese"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="@string/custom_info"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_lessoninfo"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tabbar_normal"
+            android:textSize="18sp" >
+
+            <ImageView
+                android:id="@+id/iv_language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_order_study" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_language"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="@string/custom_lessoninfo"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bt_photoinfo"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_tabbar_normal"
+            android:textSize="18sp" >
+
+            <ImageView
+                android:id="@+id/iv_water"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_order_photo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_water"
+                android:layout_centerHorizontal="true"
+                android:background="@null"
+                android:text="@string/menu_album"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/ll_custonview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_title2"
+        android:layout_below="@+id/ll_title"
+        layout="@layout/view_custominfo" />
+
+    <include
+        android:id="@+id/ll_lessonview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_title2"
+        android:layout_below="@+id/ll_title"
+        layout="@layout/view_studentplan" />
+
+</RelativeLayout>

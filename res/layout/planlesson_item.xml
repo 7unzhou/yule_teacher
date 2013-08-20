@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/album_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Azure" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/SkyBlue"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_album_header"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_album_camera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@color/SeaGreen" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/album_babyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_album_header"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/album_totalcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/album_babyname"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/album_newcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/album_totalcount"
+            android:background="@color/red"
+            android:gravity="center" />
+    </RelativeLayout>
+
+</LinearLayout>

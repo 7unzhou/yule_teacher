@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="45.0dip"
+    android:background="@drawable/bg_contact_search" >
+
+    <Button
+        android:id="@+id/bt_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bt_blue_small_normal"
+        android:text="搜索"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/edit_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/bt_search"
+        android:background="@drawable/bg_contact_search_edittext"
+        android:hint="@string/album_search_hint"
+        android:paddingLeft="24.0dip"
+        android:singleLine="true"
+        android:textSize="14.0sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="4.0dip"
+        android:src="@drawable/ic_hi_search" />
+
+    <ImageView
+        android:id="@+id/btn_clean_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right|center"
+        android:layout_toLeftOf="@+id/bt_search"
+        android:paddingLeft="4.0dip"
+        android:paddingRight="4.0dip"
+        android:src="@drawable/btn_del_search"
+        android:visibility="gone" />
+
+</RelativeLayout>

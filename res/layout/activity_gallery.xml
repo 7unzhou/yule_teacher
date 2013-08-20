@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_gallery_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_custom_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_customname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_custom_header"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_galleryupload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_customname"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_customname"
+            android:text="@string/ablum_todayupload"
+            android:textColor="@color/scoregray" />
+
+        <TextView
+            android:id="@+id/tv_newuploadcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_customname"
+            android:layout_toRightOf="@+id/tv_galleryupload"
+            android:text="@string/zero"
+            android:textColor="@color/Orange"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_uploadphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_custom_header"
+            android:layout_alignLeft="@+id/tv_customname"
+            android:layout_below="@+id/tv_customname"
+            android:background="@drawable/bt_blue_small_normal"
+            android:text="@string/ablum_upload"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_photocount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_gallery_info"
+        android:layout_marginLeft="5dp" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tv_photocount"
+        android:columnWidth="@dimen/image_thumbnail_size"
+        android:horizontalSpacing="4px"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:padding="10px"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5px" >
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/rl_updateview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/bt_updatepohoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bt_blue_small_normal"
+            android:text="@string/ablum_uploadphoto"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/iv_pohotoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bt_updatepohoto"
+            android:background="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_rotateleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="左转"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bt_blue_small_normal"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/bt_rotateright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_blue_small_normal"
+            android:text="右转"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

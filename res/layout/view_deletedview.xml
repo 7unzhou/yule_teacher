@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|right"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/tv_order_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/selector_bt_icon_order"
+        android:gravity="center_vertical" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/SkyBlue" />
+
+    <Button
+        android:id="@+id/tv_order_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/selector_bt_icon_photo"
+        android:gravity="center_vertical" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/SkyBlue" />
+
+    <Button
+        android:id="@+id/tv_order_studt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_margin="8dp"
+        android:background="@drawable/selector_bt_icon_study"
+        android:gravity="center_vertical" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/SkyBlue" />
+
+    <TextView
+        android:id="@+id/deletedView_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:drawableLeft="@android:drawable/ic_menu_revert"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical" />
+
+</LinearLayout>

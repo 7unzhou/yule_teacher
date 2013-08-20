@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/white" />
+
+            <RelativeLayout
+                android:id="@+id/rl_customname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_header"
+                android:background="@drawable/bg_day_normal"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="客户姓名"
+                    android:textColor="@color/scoregray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_customnick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_customname"
+                android:background="@drawable/bg_day_normal"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="孩子小名"
+                    android:textColor="@color/scoregray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_monthage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_customnick"
+                android:background="@drawable/bg_day_normal"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="月龄"
+                    android:textColor="@color/scoregray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_monthage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_reservetime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_monthage"
+                android:background="@drawable/bg_day_normal"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="预约时间"
+                    android:textColor="@color/scoregray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_reservetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_babytype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_reservetime"
+                android:background="@drawable/bg_day_normal"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="类型"
+                    android:textColor="@color/scoregray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_babytype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_babytype"
+                android:background="@drawable/bg_day_normal"
+                android:gravity="center_vertical"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_remarktext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="备注"
+                    android:textColor="@color/scoregray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_remarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_remarktext"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView></RelativeLayout>

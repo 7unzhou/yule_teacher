@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/custom_header"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/custom_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_arrow_list" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/rl_customtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/custom_more" >
+
+        <TextView
+            android:id="@+id/order_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:gravity="left"
+            android:text="预约时间%1$s"
+            android:textColor="@color/scoregray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/order_surplus_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/order_content"
+            android:layout_below="@+id/order_content"
+            android:text="还剩余%1$s小时"
+            android:textColor="@color/Orange"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_customname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/rl_customtime"
+        android:layout_toRightOf="@+id/custom_header"
+        android:textSize="18sp" />
+
+</RelativeLayout>

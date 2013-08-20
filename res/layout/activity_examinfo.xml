@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title"
+        android:gravity="center_horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_examinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp" >
+
+            <TextView
+                android:id="@+id/tv_examinfo_t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="此试卷共有"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_examinfo_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_examinfo_t1"
+                android:background="@android:color/background_dark"
+                android:text="  "
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_examinfo_num"
+                android:text="题"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_examinfo_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_examinfo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="答题时间"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_examinfo_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_examinfo_t2"
+            android:layout_centerHorizontal="true"
+            android:text="00:15:00"
+            android:textColor="@color/scoregreen"
+            android:textSize="38sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_examinfo_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_examinfo_time"
+            android:layout_marginTop="10dp"
+            android:text="界面跳出可返回继续作答"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/bt_examinfo_goexam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bt_blue_small_normal"
+            android:text="准备好了 ,开始答题"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_examinfo_t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bt_examinfo_goexam"
+            android:layout_centerHorizontal="true"
+            android:text="中途放弃答题或超时则视为无效"
+            android:textColor="@color/Orange"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

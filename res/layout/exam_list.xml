@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:weightSum="10" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_weight="6" >
+
+        <RelativeLayout
+            android:id="@+id/rl_examscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_score" >
+
+            <TextView
+                android:id="@+id/tv_exam_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:textSize="28sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_exam_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:textSize="14sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_exam_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/rl_examscore"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_exam_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_exam_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/scoregray"
+            android:layout_toRightOf="@+id/rl_examscore"
+            android:drawableLeft="@drawable/icon_time"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bt_examing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bt_blue_small_normal"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <!--
+    <RelativeLayout
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_exam_score2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/exam_noexaming" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_exam_state"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_exam_score"
+            android:background="@android:color/darker_gray" >
+        </ImageView>
+    </RelativeLayout>
+    -->
+
+</LinearLayout>

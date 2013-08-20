@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/detailitem_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_day_normal" >
+
+        <TextView
+            android:id="@+id/detailitem_day"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/Orange"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/detailitem_reson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/detailitem_day"
+            android:textSize="20sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/detailitem_wage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/Orange"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/detailitem_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_below="@+id/detailitem_title"
+        android:textColor="@color/scoregray"
+        android:textSize="16sp" />
+
+</RelativeLayout>

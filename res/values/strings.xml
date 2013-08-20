@@ -1,0 +1,152 @@
+<resources>
+
+    <string name="app_name">贝贝-教师</string>
+    <string name="host_url">http://e.yulebaby.com/s</string>
+    <string name="no_network_connection_toast">请检查您的网络</string>
+    <string name="submit_fail">提交失败，请重试！</string>
+    <string name="loading">正在加载..</string>
+    <string name="loading_text">正在获取数据</string>
+    <!-- dialog -->
+    <string name="dialog_confirm">确 定</string>
+    <string name="dialog_cancel">取 消</string>
+    <string name="dialog_replace">替换</string>
+    <string name="dialog_update">软件升级</string>
+    <string name="dialog_update_v">鱼乐贝贝有最新版本,是否升级?</string>
+    <string name="dialog_phone">致电鱼乐贝贝</string>
+    <string name="dialog_order_cancel">是否取消此次预约?</string>
+    <string name="order_hint">可以在左侧选择预定日期</string>
+    <string name="order_month">月</string>
+
+    <string-array name="choices">
+        <item>拍照</item>
+        <item>从相册中选择</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="select_months_items">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+    <!-- login -->
+    <string name="passport_hint">请输入用户名</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="login_ing">正在登录..</string>
+    <!-- menu -->
+    <string name="menu_exit">退出登录</string>
+    <string name="menu_teaching">教案学习</string>
+    <string name="menu_salary">工资</string>
+    <string name="menu_order">客户预约</string>
+    <string name="menu_exam">在线考试</string>
+    <string name="menu_album">相册</string>
+    <string name="menu_manual">培训手册</string>
+    <string name="menu_attend">考勤</string>
+    <string name="menu_interaction">客户互动</string>
+
+    <!-- title -->
+    <string name="title_teaching">教案学习</string>
+    <string name="title_salary">工资</string>
+    <string name="title_exam">考试</string>
+    <string name="title_album">宝宝相册</string>
+    <string name="title_order">客户预约</string>
+
+    <!-- title button -->
+    <string name="title_bt_back">后退</string>
+    <string name="title_bt_exit">退出</string>
+    <string name="title_bt_appramodel">评价模板</string>
+    <string name="title_bt_addtemplate">添加</string>
+    <string name="title_bt_sendappra">发送评价</string>
+    <string name="title_bt_quotetemp">引用模板</string>
+    <string name="title_bt_cancel">取消</string>
+    <string name="title_bt_confir">确认</string>
+
+    <!-- Order moder -->
+    <string name="reserveTime">预约时间 %1$s</string>
+    <string name="remainTime">还剩余%1$s</string>
+    <!-- Appraisal model -->
+    <string name="apprai_contenthint">请输入内容</string>
+    <string name="add_to_template">添加为模板</string>
+    <string name="appraisal_contentcount">(%1$d/140)</string>
+    <string name="appraisal_name">To:%1$s</string>
+    <string name="appraisal_height">身高：</string>
+    <string name="appraisal_weight">体重：</string>
+    <string name="appraisal_cm">cm</string>
+    <string name="appraisal_kg">kg</string>
+    <string name="appraisal_digts">1234567890.</string>
+    <string name="server_time">服务时间:%1$s</string>
+
+    <!-- Album model -->
+    <string name="album_search_hint">可按会员号/姓名/小名进行查询</string>
+    <string name="photo_total">共有 %1$s张</string>
+    <string name="ablum_recent">最近上传</string>
+    <string name="ablum_least">没有上传照片</string>
+    <string name="ablum_todayupload">今日上传</string>
+    <string name="ablum_uploadphoto">上传照片</string>
+    <string name="ablum_upload">+上传新照片</string>
+    <string name="zero">0</string>
+    <string name="custom_title">客户详情</string>
+    <string name="custom_info">我的详情</string>
+    <string name="custom_lessoninfo">学习计划</string>
+    <string name="ablum_num">%1$s张</string>
+    <string name="lesson_pre">下次将要</string>
+    <string name="lesson_last">上次学到</string>
+
+    <!-- Exam Model -->
+    <string name="exam_createtime">生成于：%1$s</string>
+    <string name="exam_core">%1$d分</string>
+    <string name="exam_noexaming">未作答</string>
+    <string name="exam_pass">通过</string>
+    <string name="exam_nopass">未通过</string>
+    <string name="exam_qnum">第%1$d题</string>
+
+    <!-- Salary Model -->
+    <string name="weekday_1">周一</string>
+    <string name="weekday_2">周二</string>
+    <string name="weekday_3">周三</string>
+    <string name="weekday_4">周四</string>
+    <string name="weekday_5">周五</string>
+    <string name="weekday_6">周六</string>
+    <string name="weekday_7">周日</string>
+    <string name="salary_total">总计:%1$d</string>
+    <string name="salary_basic">工资:%1$d</string>
+    <string name="salary_insured">保险:%1$d</string>
+    <string name="salary_commission">抽成</string>
+    <string name="salary_add">奖励</string>
+    <string name="salary_sub">考勤</string>
+    <string name="salary_other">其他</string>
+
+    <!-- attend -->
+    <string name="attend_month">本月</string>
+    <string name="attend_month_select">选择月份</string>
+    <string name="attend_allabsence">共计缺勤</string>
+    <string name="attend_time">次</string>
+    <string name="attend_rmb">元</string>
+    <string name="attend_absence">缺勤</string>
+
+    <!-- exit -->
+    <string name="backkey_again">再按一次退出程序.</string>
+    <string name="interation_isappra">已评价</string>
+    <string name="interation_isnotappra">未评价</string>
+
+    <!-- teaching -->
+    <string name="teahcing_chinese">国学</string>
+    <string name="teahcing_bilingual">双语</string>
+    <string name="teahcing_water">水育</string>
+
+    <!-- about -->
+    <string name="about">2012 yulebaby Co.,Ltd.All right reserved</string>
+    <string name="about_web">访问鱼乐贝贝官方网站</string>
+    <string name="about_phone">致电我们</string>
+    <string name="about_url">http://www.yulebaby.com</string>
+
+</resources>

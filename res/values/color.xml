@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="red">#fff9bbbb</color>
+    <color name="SkyBlue">#00BFFF</color>
+    <color name="Azure">#F0FFFF</color>
+    <color name="Orange">#FFA500</color>
+    <color name="SeaGreen">#2E8B57</color>
+    <color name="gray">#ff333333</color>
+    <color name="studeytext">#55595C</color>
+    <color name="scoregray">#A1A3AA</color>
+    <color name="scoregreen">#449175</color>
+    <color name="scorered">#DF9D91</color>
+
+</resources>

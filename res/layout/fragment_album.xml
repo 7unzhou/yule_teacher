@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar" />
+
+    <include
+        android:id="@+id/rl_album_search"
+        layout="@layout/searchbar" />
+
+    <ListView
+        android:id="@+id/lv_babyalbum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout>

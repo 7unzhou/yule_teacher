@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/album_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_grouptitle_list"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_vertical"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/iv_album_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_album_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_arrow_list" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/album_babyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_album_header"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/album_totalcount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/album_babyname"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_album_header"
+            android:gravity="center_horizontal"
+            android:text="有"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/album_totalcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/album_babyname"
+            android:layout_toRightOf="@+id/album_totalcount1"
+            android:gravity="center_horizontal"
+            android:textColor="@color/Orange"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/album_totalcount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/album_babyname"
+            android:layout_toRightOf="@+id/album_totalcount"
+            android:gravity="center_horizontal"
+            android:text="个瞬间"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/album_newcount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/album_babyname"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/album_totalcount2"
+            android:gravity="center_horizontal"
+            android:text="今日"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/album_newcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/album_babyname"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/album_newcount1"
+            android:background="@drawable/bg_number_list"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

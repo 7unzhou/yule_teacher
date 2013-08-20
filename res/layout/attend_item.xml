@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_day_normal"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/attend_item_workdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/Orange"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@android:color/white" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/attend_item_workdate"
+        android:layout_alignTop="@+id/attend_item_workdate"
+        android:layout_toRightOf="@+id/attend_item_workdate"
+        android:padding="3dp" >
+
+        <TextView
+            android:id="@+id/attend_item_reson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/Orange"
+            android:padding="2dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/attend_item_rmb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/Orange" />
+
+        <TextView
+            android:id="@+id/attend_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/attend_item_reson"
+            android:layout_below="@+id/attend_item_reson" />
+    </RelativeLayout>
+
+</RelativeLayout>

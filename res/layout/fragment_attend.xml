@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_attendcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title" >
+
+        <RelativeLayout
+            android:id="@+id/rl_salary_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/SeaGreen" >
+
+            <TextView
+                android:id="@+id/tv_attendmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/attend_month"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:text="@string/attend_rmb"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_absence_rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_rmb"
+                android:textColor="@color/Orange"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/tv_absence_rmb"
+                android:text="@string/attend_time"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_absence_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_times"
+                android:textColor="@color/Orange"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tv_absence_times"
+                android:text="@string/attend_allabsence"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv_attend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_salary_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:dividerHeight="5dp" >
+        </ListView>
+    </RelativeLayout>
+
+</RelativeLayout>
