@@ -206,9 +206,10 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
 			return;
 		case R.id.menu_exit:
 			getActivity().finish();
-			//Intent intent = new Intent(getActivity(), LoginActivity.class);
-			//intent.putExtra("auto", false);
-			//this.startActivity(intent);
+			Intent intent = new Intent(getActivity(), LoginActivity.class);
+			intent.putExtra("auto", false);
+			this.startActivity(intent);
+			
 			return;
 		}
 		setSelect(index);

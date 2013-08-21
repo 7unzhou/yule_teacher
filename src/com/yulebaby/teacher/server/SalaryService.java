@@ -22,6 +22,7 @@ import com.yulebaby.teacher.net.analysis.ListDataAnalysis;
 import com.yulebaby.teacher.net.analysis.adapter.ExamListAdapter;
 import com.yulebaby.teacher.net.analysis.adapter.MonthsAdapter;
 import com.yulebaby.teacher.net.analysis.adapter.SalaryCommissionAdapter;
+import com.yulebaby.teacher.net.analysis.adapter.SalaryDayDetailAdapter;
 import com.yulebaby.teacher.net.analysis.adapter.SalaryDetailAdapter;
 import com.yulebaby.teacher.net.analysis.adapter.SalaryMonthAdapter;
 
@@ -79,7 +80,7 @@ public class SalaryService {
 		try {
 			result = HttpHelper.getInfo(context, url, params,
 					new ListDataAnalysis<DaySalary>(
-							new SalaryCommissionAdapter()));
+							new SalaryDayDetailAdapter()));
 
 		} catch (Exception e) {
 			e.printStackTrace();
